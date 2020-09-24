@@ -2,7 +2,7 @@
   <div class="form">
     <div class="form_container form_intro">
       <vue-headful
-        :title="'Edgeryders | ' + form.config.title"
+        :title="'Blivande | ' + form.config.title"
         :description="form.config.text"
       />
       <div class="introduction">
@@ -10,7 +10,7 @@
           <div class="logo" v-for="(item, index) in form.config.logos">
             <a
               href="https://forum.blivande.com"
-              v-if="item.image == 'edgeryders'"
+              v-if="item.image == 'blivande'"
               target="_blank"
             >
               <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
@@ -298,7 +298,7 @@ export default {
   data: () => ({
     form: null,
     article: false,
-    formId: "14202",
+    formId: "1464",
     account_errors: null,
     valid: {
       email: null,
