@@ -7,9 +7,9 @@
           The Edgeryders online platform and activities are intended for people
           to cooperate within and across projects trying to build a better
           world. The word "better" has here a fairly broad range of meaning.
-          These <a href="https://edgeryders.eu/t/netiquette/45" target="_blank">Community Guidelines</a> are here to help you understand what it
+          These <a href="https://forum.blivande.com/t/netiquette/45" target="_blank">Community Guidelines</a> are here to help you understand what it
           means to be a member of Edgeryders. Don’t forget that your use of
-          Edgeryders is subject to these <a href="https://edgeryders.eu/t/netiquette/45" target="_blank">Community Guidelines</a> and our <a href="https://communities.edgeryders.eu/tos" target="_blank">Terms of
+          Edgeryders is subject to these <a href="https://forum.blivande.com/t/netiquette/45" target="_blank">Community Guidelines</a> and our <a href="https://communities.edgeryders.eu/tos" target="_blank">Terms of
           Service</a>.
         </p>
       </div>

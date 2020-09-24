@@ -5,7 +5,7 @@
 
 **Description.** A standalone, Vue.js based survey form builder software that posts its collected data as topics to a [Discourse](https://discourse.org/) forum. It is meant as a low-barrier way for potential new users to interact with a Discourse forum. Their first post is just about filling out a simple, minimalist looking form, and afterwards they already have a full Discourse account, will receive e-mail notifications about responses to their topic, and can engage further if they feel like it.
 
-**Requirements.** Out of the box, the software works only with the modified Discourse installations of [edgeryders.eu](https://edgeryders.eu/) and its associated forums called "Edgeryders Communities". You can set up an equivalent installation with a separate SSO provider and SSO client Discourse installation, as per the instructions below. But if you operate a normal Discourse forum with direct login, it will be simpler to adapt this software accordingly.
+**Requirements.** Out of the box, the software works only with the modified Discourse installations of [edgeryders.eu](https://forum.blivande.com/) and its associated forums called "Edgeryders Communities". You can set up an equivalent installation with a separate SSO provider and SSO client Discourse installation, as per the instructions below. But if you operate a normal Discourse forum with direct login, it will be simpler to adapt this software accordingly.
 
 **Architecture.** The application is a single-page web application made with Vue.js, using the API of two Discourse installations as its backend. One Discourse installation is the SSO provider, needed for creating a new user account. The other Discourse installation is the actual forum, needed to post a survey response under the Discourse account created for the user.
 
@@ -22,7 +22,7 @@ Since we transfer API keys and passwords to them via API, this is strongly encou
 
 This plugin has to be installed on the Discourse instance used as the SSO provider. For the plugin source code and installation instructions, [see here](https://github.com/edgeryders/discourse/tree/multisite/plugins/edgeryders-multisite-accounts).
 
-Note that this plugin needs a configuration section in `config/secrets.yml` of your Discourse installation where you define the `auth_key` (an anti-spam measure, [see here](https://edgeryders.eu/t/-/7904#heading--3-4)) and also enter the master API keys (called the "All Users" API keys in the Discourse backend) of all SSO client Discourse instances on which you want your installation(s) of this survey software to post. The configuration section will look like this:
+Note that this plugin needs a configuration section in `config/secrets.yml` of your Discourse installation where you define the `auth_key` (an anti-spam measure, [see here](https://forum.blivande.com/t/-/7904#heading--3-4)) and also enter the master API keys (called the "All Users" API keys in the Discourse backend) of all SSO client Discourse instances on which you want your installation(s) of this survey software to post. The configuration section will look like this:
 
 ```
 production:
@@ -73,7 +73,7 @@ The following steps have to be done in both Discourse instances (SSO provider an
     # API endpoint for posting survey responses.
     VUE_APP_DISCOURSE_TOPIC_URL=https://forum1.example.com/posts.json
     # Numeric category ID of a category where to post the survey responses.
-    # The category must allow all users to post. To find the ID, see https://edgeryders.eu/t/-/6647#heading--2-1
+    # The category must allow all users to post. To find the ID, see https://forum.blivande.com/t/-/6647#heading--2-1
     VUE_APP_DISCOURSE_CATEGORY=343
     ```
 
@@ -181,6 +181,6 @@ A simple example is below:
 
 API documentation:
 
-* **multisite_account.json.** The custom Discourse API extension created by Edgeryders that allows to create a new account with Discourse as a SSO provider. See: [API documentation](https://edgeryders.eu/t/-/7904#heading--3-4), [plugin source code](https://github.com/edgeryders/discourse/tree/multisite/plugins/edgeryders-multisite-accounts).
+* **multisite_account.json.** The custom Discourse API extension created by Edgeryders that allows to create a new account with Discourse as a SSO provider. See: [API documentation](https://forum.blivande.com/t/-/7904#heading--3-4), [plugin source code](https://github.com/edgeryders/discourse/tree/multisite/plugins/edgeryders-multisite-accounts).
 
 * **posts.json.** Part of the standard [Discourse API](https://docs.discourse.org/), and used to create a new topic with the survey response, under a Discourse account created for that user. See: [API documentation](https://docs.discourse.org/#tag/Posts/paths/~1posts.json/post).
